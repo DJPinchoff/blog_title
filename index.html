@@ -8,39 +8,63 @@
   </head>
   <body>
     <header>
-      <h1>BLOG TITLE</h1>
+      <h1><a href="index.html">BLOG TITLE</a></h1>
       <figure>
         <img src="images/logo.png" alt="Logo Image">
       </figure>
       <nav>
         <ul>
-          <li class="active">HOME</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JAVASCRIPT</li>
-          <li>ABOUT</li>
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JAVASCRIPT</a></li>
+          <li><a href="#">ABOUT</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <article>
-        <h2>Post Headline</h2>
-        <p>Written by <a href="#">Shane Riley</a> on Feb. 15, 2014</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
-      </article>
-      <article>
-        <h2>Post Headline</h2>
-        <p>Written by <a href="#">Shane Riley</a> on Feb. 15, 2014</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
-      </article>
-      <div class="inline">
-        <ul class="inactive button">
-          <li><a href="#">Prev</a></li>
-        </ul>
-        <ul class="active button">
-          <li><a href="#">Next</a></li>
-        </ul>
+      <div class="articles">
+        <article>
+          <h2><a href="post.html">Post Headline</a></h2>
+          <p>Written by <a href="#">Shane Riley</a> on Feb. 15, 2014</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
+        </article>
+        <article>
+          <h2><a href="post.html">Post Headline</a></h2>
+          <p>Written by <a href="#">Shane Riley</a> on Feb. 15, 2014</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
+        </article>
+        <div>
+          <ul class="inactive button">
+            <li><a href="#">Prev</a></li>
+          </ul>
+          <ul class="active button">
+            <li><a href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidebar">
+        <dl>
+          <dt>Categories</dt>
+          <dd class="indent">
+            <ul>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">Other</a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>About</dt>
+          <dd>
+            Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisq.
+          </dd>
+        </dl>
       </div>
     </main>
+    <footer>
+      <p>&copy; 2014 Blog Title</p>
+    </footer>
   </body>
 </html>

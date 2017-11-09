@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   font: normal 20px Helvetica, Arial, sans-serif;
 }
@@ -33,43 +38,62 @@ header nav li {
   padding: 0 25px;
 }
 
-li.active {
+header nav a:hover {
+  color: #f1e100;
+}
+
+a.active {
   color: #00c9ba;
 }
 
 main {
-  width: 1200px;
-  padding: 80px 100px;
+  width: 1000px;
+  padding: 0 0 93px 0;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-main article {
+div.articles {
+  padding-top: 40px;
+}
+
+main div article {
   width: 650px;
   color: #45494d;
   margin-bottom: 80px;
 }
 
-main article h2 {
+main div article h2 {
   margin-bottom: 20px;
+}
+
+main div article h2 a {
+  color: #45494d;
   font-size: 36px;
   font-weight: bold;
 }
 
-main article p {
+main div article h2 a:hover {
+  color: #00c9ba;
+}
+
+main div article p {
   margin-bottom: 15px;
   line-height: 30px;
   text-align: justify;
 }
 
-main article p a {
+main div article p a {
   text-decoration: none;
   color: #50c3af;
 }
 
-main ul.inactive {
+main div div ul.inactive {
   margin: 0 25px 0 0;
 }
-main ul.button li a {
+
+.button li a {
   color: #fff;
   font-size: 14px;
   text-decoration: none;
@@ -77,14 +101,82 @@ main ul.button li a {
   border-radius: 20px;
 }
 
-main ul.inactive li a {
+.inactive li a {
   background: #d2d5da;
 }
 
-main ul.active li a {
+.active li a {
   background: #50c3af;
 }
 
-div ul {
+main div div ul {
   display: inline-block;
+}
+
+main div dl dd ul li a {
+  color: #45494d;
+}
+
+main div dl dd ul li a:hover {
+  color: #00C8B0;
+}
+
+main div {
+  margin-top: 40px;
+}
+
+main div dl dd ul {
+  list-style-type: none;
+  list-style-image: url("images/list_icon.png")
+}
+
+.indent {
+  padding-left: 20px;
+}
+
+main div dl dd ul li {
+  line-height: 21px;
+}
+
+
+main div.sidebar {
+  margin-top: 80px;
+}
+
+dl {
+  max-width: 235px;
+  background: #f6f7f8;
+  padding: 40px;
+}
+
+main div dl:first-child {
+  padding-bottom: 77px;
+}
+
+dt {
+  font: bold 16px Helvetica, Arial, sans-serif;
+  color: #45494E;
+  padding-bottom: 33px;
+  text-transform: uppercase;
+}
+
+main div dl:nth-child(2) > dt {
+  padding-bottom: 35px;
+}
+
+dd {
+  font: normal 14px Helvetica, Arial, sans-serif;
+  max-width: 170px;
+  line-height: 21px;
+  text-align: justify;
+  color: #787b80;
+}
+
+footer {
+  border-top: 1px solid #d0d0d0;
+  width: 1000px;
+  font: normal 12px Helvetica, Arial, sans-serif;
+  color: #7D82AB;
+  margin: 0 auto;
+  padding: 17px 0 32px 0;
 }
