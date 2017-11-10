@@ -14,8 +14,8 @@
       </figure>
       <nav>
         <ul>
-          <li><a class="active" href="index.html">HOME</a></li>
-          <li><a href="#">HTML</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="#">HTML</a></li>
           <li><a href="#">CSS</a></li>
           <li><a href="#">JAVASCRIPT</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -23,25 +23,57 @@
       </nav>
     </header>
     <main>
-      <div class="glossary">
+      <div>
         <article>
           <h2><a href="post.html">Post Headline</a></h2>
           <p>Written by <a href="#">Shane Riley</a> on Feb. 15, 2014</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
         </article>
-        <article>
-          <h2><a href="post.html">Post Headline</a></h2>
-          <p>Written by <a href="#">Shane Riley</a> on Feb. 15, 2014</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.</p>
-        </article>
-        <div>
-          <ul class="inactive button">
-            <li><a href="#">Prev</a></li>
-          </ul>
-          <ul class="active button">
-            <li><a href="#">Next</a></li>
-          </ul>
-        </div>
+        <section class="comments">
+          <h2>Comments</h2>
+          <article>
+            <div>
+              <img src="images/img_kevin.jpg" alt="Kevin Headshot">
+              <p>
+                <a href="#">Kevin</a> on Feb. 15, 2014
+              </p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </article>
+          <article>
+            <div>
+              <img src="images/img_chris.jpg" alt="Chris Headshot">
+              <p>
+                <a href="#">Chris</a> on Feb. 15, 2014
+              </p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+          </article>
+        </section>
+        <section>
+          <h2>Post Comment</h2>
+          <form name="post-comment" action="#" method="post">
+            <label for="name">
+              <h3>Your name</h3>
+              <input id="name" type="text"/>
+            </label>
+            <label for="email">
+              <h3>Email address</h3>
+              <input id="email" placeholder="name@website.com" type="email"/>
+            </label>
+            <label for="comment">
+              <h3>Comment</h3>
+              <textarea name="comment" id="comment"></textarea>
+            </label>
+          </form>
+          <button for="post-comment" type="submit" value="submit">
+            Submit
+          </button>
+        </section>
       </div>
       <aside class="sidebar">
         <dl>

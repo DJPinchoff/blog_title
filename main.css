@@ -2,18 +2,13 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
 body {
   font: normal 20px Helvetica, Arial, sans-serif;
 }
 
 header {
   color: #fff;
-  background: #3D3D3D;
+  background: #3d3d3d;
   text-align: center;
   padding-top: 130px;
 }
@@ -42,20 +37,28 @@ header nav a:hover {
   color: #f1e100;
 }
 
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: #fff;
+}
+
 a.active {
   color: #00c9ba;
 }
 
 main {
   width: 1000px;
-  padding: 0 0 93px 0;
+  padding: 80px 0 66px 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-div.articles {
-  padding-top: 40px;
+div.glossary {
+  margin-bottom: 27px;
 }
 
 main div article {
@@ -64,11 +67,11 @@ main div article {
   margin-bottom: 80px;
 }
 
-main div article h2 {
+h2 {
   margin-bottom: 20px;
 }
 
-main div article h2 a {
+h2, h2 a {
   color: #45494d;
   font-size: 36px;
   font-weight: bold;
@@ -78,13 +81,14 @@ main div article h2 a:hover {
   color: #00c9ba;
 }
 
-main div article p {
+main div p {
   margin-bottom: 15px;
   line-height: 30px;
   text-align: justify;
 }
 
-main div article p a {
+main div article p a,
+main section article div h3 a {
   text-decoration: none;
   color: #50c3af;
 }
@@ -101,6 +105,22 @@ main div div ul.inactive {
   border-radius: 20px;
 }
 
+button {
+  display: block;
+  background: #00c8b0;
+  color: #fff;
+  border: 0;
+  padding: 5px 25px;
+  border-radius: 20px;
+  font: normal 14px Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  letter-spacing: .5px;
+}
+
+form {
+  padding-bottom: 15px;
+}
+
 .inactive li a {
   background: #d2d5da;
 }
@@ -113,19 +133,15 @@ main div div ul {
   display: inline-block;
 }
 
-main div dl dd ul li a {
-  color: #45494d;
+main aside dl dd ul li a {
+  color: #787b80;
 }
 
-main div dl dd ul li a:hover {
+main aside dl dd ul li a:hover {
   color: #00C8B0;
 }
 
-main div {
-  margin-top: 40px;
-}
-
-main div dl dd ul {
+main aside dl dd ul {
   list-style-type: none;
   list-style-image: url("images/list_icon.png")
 }
@@ -134,13 +150,8 @@ main div dl dd ul {
   padding-left: 20px;
 }
 
-main div dl dd ul li {
+main aside dl dd ul li {
   line-height: 21px;
-}
-
-
-main div.sidebar {
-  margin-top: 80px;
 }
 
 dl {
@@ -160,7 +171,11 @@ dt {
   text-transform: uppercase;
 }
 
-main div dl:nth-child(2) > dt {
+dl:nth-of-type(2) {
+  padding: 77px 40px 40px 40px;
+}
+
+main aside dl:nth-of-type(2) > dt {
   padding-bottom: 35px;
 }
 
@@ -172,6 +187,73 @@ dd {
   color: #787b80;
 }
 
+section {
+  padding-bottom: 25px;
+}
+
+main div section dl {
+  width: 100%;
+  max-width: none;
+  display: inline-block;
+}
+
+main div section p img {
+  border-radius: 100%;
+}
+
+main div section dt {
+  display: inline-block;
+}
+
+main section div {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 19px;
+}
+
+main section article {
+  margin-bottom: 45px;
+}
+
+main section article div img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+h3 {
+  font-weight: bold;
+  color: #45494e;
+  padding-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 450px;
+  height: 38px;
+  font: normal 15px Helvetica, Arial, sans-serif;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: solid 2px #9ABEEE;
+}
+
+textarea {
+  font-size: 15px;
+  padding: 5px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  resize: none;
+  width: 100%;
+  height: 140px;
+}
+
 footer {
   border-top: 1px solid #d0d0d0;
   width: 1000px;
@@ -179,4 +261,9 @@ footer {
   color: #7D82AB;
   margin: 0 auto;
   padding: 17px 0 32px 0;
+}
+
+::selection {
+  background: #00c9ba;
+  color: #fff;
 }
