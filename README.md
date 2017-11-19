@@ -5,5 +5,11 @@ Check out an HTML preview of this website here:
 
 ## Project Description
 
-This is an incomplete non-functioning website. Given ```.psd``` file, I was tasked with creating a "pixel-perfect" recreation
-a given website. This showcases my HTML/CSS skills.
+Given a ```.psd``` file, I was tasked with creating a "pixel-perfect" recreation of 
+a given website. This showcases my HTML/CSS skills as I created pages with semantically similar HTML
+elements for the ```<header>```, ```<footer>```, and ```<aside>``` elements while having
+to create similarly styled, but differnet content from the index.html page to the 
+post.html page.  
+
+In order to get to ```post.html```, click on a 'Post Headline' on ```index.html```. This
+website was created for styling practice and is not complete or functional.
